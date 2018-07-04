@@ -1,0 +1,22 @@
+{
+  "name": "Workout",
+  "desc": "Very cool workout place",
+  "prop": [
+    {
+      "name": "media",
+      "value": [10]
+    },
+    {
+      "name": "private",
+      "value": 0
+    },
+    {
+      "name": "isopen",
+      "value": 1
+    },
+    {
+      "name": "price",
+      "value": 100.58
+    }
+  ]
+}
