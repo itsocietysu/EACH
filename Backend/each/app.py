@@ -12,25 +12,8 @@ import falcon
 from falcon_multipart.middleware import MultipartMiddleware
 
 from each import utils
-from each.auth import auth
 from each.db import DBConnection
 from each.serve_swagger import SpecServer
-
-from each.Entities.EntityBase import EntityBase
-from each.Entities.EntityCourt import EntityCourt
-from each.Entities.EntityUser import EntityUser
-from each.Entities.EntityLocation import EntityLocation
-from each.Entities.EntityMedia import EntityMedia
-from each.Entities.EntityPost import EntityPost
-from each.Entities.EntityFollow import EntityFollow
-from each.Entities.EntityLike import EntityLike
-from each.Entities.EntityComment import EntityComment
-
-from each.search import *
-
-from each.Prop.PropMedia import PropMedia
-from each.Prop.PropLike import PropLike
-from each.Prop.PropComment import PropComment
 
 from each.MediaResolver.MediaResolverFactory import MediaResolverFactory
 
@@ -1172,13 +1155,13 @@ args = utils.RegisterLaunchArguments()
 
 cfgPath = args.cfgpath
 profile = args.profile
+
 # configure
 with open(cfgPath) as f:
     cfg = utils.GetAuthProfile(json.load(f), profile, args)
     DBConnection.configure(**cfg['each_db'])
     if 'oidc' in cfg:
         cfg_oidc = cfg['oidc']
-        auth.Configure(**cfg_oidc)
 
 general_executor = ftr.ThreadPoolExecutor(max_workers=20)
 
@@ -1201,10 +1184,6 @@ if 'server_host' in cfg:
 
     with open('swagger_temp.json', 'wt') as f:
         f.write(json_string)
-
-    EntityBase.host = server_host + baseURL
-    EntityBase.MediaCls = EntityMedia
-    EntityBase.MediaPropCls = PropMedia
 
 with open('swagger_temp.json') as f:
     server.load_spec_swagger(f.read())
