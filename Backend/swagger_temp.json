@@ -1,0 +1,1 @@
+{"swagger": "2.0", "info": {"version": "2.0.1", "title": "EACH"}, "host": "127.0.0.1:4201", "basePath": "/each", "tags": [{"name": "default", "description": "empty default feature"}], "schemes": ["http"], "paths": {}, "definitions": {}, "externalDocs": {}}
