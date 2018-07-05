@@ -1,0 +1,7 @@
+.idea/
+*.pyc
+/.vscode/
+test_files
+swagger_temp.json
+ui-dist/
+Images/
