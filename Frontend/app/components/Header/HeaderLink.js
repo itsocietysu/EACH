@@ -7,6 +7,9 @@ export default styled(Link)`
   margin: 1em;
   text-decoration: none;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -khtml-border-radius: 4px; 
   -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none;
   user-select: none;

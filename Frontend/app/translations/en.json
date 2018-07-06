@@ -3,6 +3,7 @@
   "each.components.Footer.license.message": "This project is licensed under the ...",
   "each.components.Header.features": "Features",
   "each.components.Header.home": "Home",
+  "each.components.Header.login": "Login",
   "each.containers.FeaturePage.header": "Features",
   "each.containers.FeaturePage.text.header":
     "Title",
@@ -12,6 +13,7 @@
     "EACH",
   "each.containers.HomePage.start_project.message":
     "Hello World!",
+  "each.containers.LoginPage.registration": "not registered yet?",
   "each.containers.LocaleToggle.ru": "ru",
   "each.containers.LocaleToggle.en": "en",
   "each.containers.NotFoundPage.header": "Page not found."
