@@ -13,8 +13,6 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
-import LoginPage from 'containers/LoginPage/Loadable';
-import RegistrationPage from 'containers/RegistrationPage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
@@ -36,14 +34,12 @@ export default function App() {
         titleTemplate="%s - EACH"
         defaultTitle="EACH"
       >
-        <meta name="description" content="An EACH application" />
+        <meta name="description" content="A EACH application" />
       </Helmet>
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/features" component={FeaturePage} />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/registration" component={RegistrationPage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
       <Footer />

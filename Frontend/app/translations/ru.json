@@ -3,7 +3,6 @@
   "each.components.Footer.license.message": "Проект лицензирован в соответсвии с ...",
   "each.components.Header.features": "Особенности",
   "each.components.Header.home": "Домой",
-  "each.components.Header.login": "Вход",
   "each.containers.FeaturePage.header": "Особенности",
   "each.containers.FeaturePage.text.header":
     "Заголовок",
@@ -13,7 +12,6 @@
     "",
   "each.containers.HomePage.start_project.message":
     "Привет мир!",
-  "each.containers.LoginPage.registration": "ещё не зарегестрированы?",
   "each.containers.LocaleToggle.ru": "рус",
   "each.containers.LocaleToggle.en": "анг",
   "each.containers.NotFoundPage.header": "Страница не найдена."

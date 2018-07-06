@@ -8,6 +8,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
+import { createStructuredSelector } from 'reselect';
 
 import H2 from 'components/H2';
 import CenteredSection from './CenteredSection';
@@ -23,7 +24,7 @@ export class HomePage extends React.PureComponent {
           <title>Home Page</title>
           <meta
             name="description"
-            content="An EACH application homepage"
+            content="A EACH application homepage"
           />
         </Helmet>
         <div>
