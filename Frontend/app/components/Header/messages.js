@@ -14,4 +14,8 @@ export default defineMessages({
     id: 'each.components.Header.features',
     defaultMessage: 'Features',
   },
+  login: {
+    id: 'each.components.Header.login',
+    defaultMessage: 'Login',
+  },
 });
