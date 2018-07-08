@@ -1,7 +1,7 @@
 {
   "profiles": [
     {
-      "name": "locale",
+      "name": "local",
       "server_host": "127.0.0.1:4201",
       "swagger_port": "8081",
       "api_port": "4201",

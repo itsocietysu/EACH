@@ -1,7 +1,8 @@
+
 {
   "swagger": "2.0",
   "info": {
-    "version": "2.0.1",
+    "version": "0.0.1",
     "title": "EACH"
   },
   "host": "127.0.0.1:4201",
@@ -9,19 +10,56 @@
   "tags": [
     {
       "name": "default",
-      "description": "empty default feature"
+      "description": "default feature set"
     }
   ],
   "schemes": [
     "http"
   ],
   "paths": {
-
+    "/version": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "Returns current project version",
+        "description": "Returns current project version",
+        "operationId": "getVersion",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          }
+        },
+        "security": [
+          {
+            "auth_env": []
+          }
+        ]
+      }
+    }
   },
   "definitions": {
-
+    "ApiResponse": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    }
   },
   "externalDocs": {
-
+      "description": "Find out more about Swagger",
+       "url": "http://swagger.io"
   }
 }
