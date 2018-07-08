@@ -4,6 +4,11 @@ import datetime
 import argparse
 import base64
 import requests
+import json
+
+def obj_to_json(obj):
+    return json.dumps(obj, indent=2)
+
 
 def _DateToString(datetime):
     return datetime.ctime()
