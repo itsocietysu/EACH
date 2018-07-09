@@ -8,3 +8,7 @@
  * Follow this format:
  * export const YOUR_ACTION_CONSTANT = 'yourproject/YourContainer/YOUR_ACTION_CONSTANT';
  */
+
+export const CHECK_LOGIN = 'each/App/CHECK_LOGIN';
+export const CHECK_LOGIN_SUCCESS = 'each/App/CHECK_LOGIN_SUCCESS';
+export const CHECK_LOGIN_ERROR = 'each/App/CHECK_LOGIN_ERROR';
